@@ -71,4 +71,8 @@ nav{
 	padding: 2px;
 	height: 40px;
 }
+
+p, h1, h2{
+	margin: 0;
+}
 </style>

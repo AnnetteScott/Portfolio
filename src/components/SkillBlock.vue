@@ -38,7 +38,6 @@ export default defineComponent({
 }
 
 p{
-	margin: 0;
 	font-size: 15px;
 	white-space: nowrap;
 }
