@@ -19,18 +19,18 @@ export default defineComponent({
 		</section>
 		<section id="skills">
 			<div>
-				<SkillBlock title="Unreal" imgName="UE_Logo.svg"/>
-				<SkillBlock title="C++" imgName="C++_Logo.svg"/>
-				<SkillBlock title="C#" imgName="Csharp_Logo.png"/>
-				<SkillBlock title="Firebase" imgName="Firebase_Logo_Logomark.svg"/>
-				<SkillBlock title="Java" imgName="java-logo3.png"/>
-				<SkillBlock title="GitHub" imgName="github-mark.svg"/>
-				<SkillBlock title="SQL" imgName="logo-mysql-170x115.png"/>
-				<SkillBlock title="Python" imgName="python-logo-only.svg"/>
-				<SkillBlock title="TypeScript" imgName="ts-logo-128.svg"/>
-				<SkillBlock title="Vue" imgName="Vue.js_Logo.svg"/>
-				<SkillBlock title="HTML" imgName="HTML5_logo_and_wordmark.svg"/>
-				<SkillBlock title="CSS" imgName="CSS3_logo_and_wordmark.svg"/>
+				<SkillBlock title="Unreal" imgName="Unreal.svg"/>
+				<SkillBlock title="C++" imgName="C++.svg"/>
+				<SkillBlock title="C#" imgName="CSharp.svg"/>
+				<SkillBlock title="Firebase" imgName="Firebase.svg"/>
+				<SkillBlock title="Java" imgName="Java.svg"/>
+				<SkillBlock title="GitHub" imgName="GitHub.svg"/>
+				<SkillBlock title="SQL" imgName="MySQL.svg"/>
+				<SkillBlock title="Python" imgName="Python.svg"/>
+				<SkillBlock title="TypeScript" imgName="TypeScript.svg"/>
+				<SkillBlock title="Vue" imgName="Vue.svg"/>
+				<SkillBlock title="HTML" imgName="HTML.svg"/>
+				<SkillBlock title="CSS" imgName="CSS.svg"/>
 			</div>
 		</section>
 	</main>

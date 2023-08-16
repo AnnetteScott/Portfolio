@@ -13,10 +13,10 @@ window.addEventListener('resize', function(event) {
 		<RouterLink to="/projects" class="nav_items">Projects</RouterLink>
 		<RouterLink to="/experience" class="nav_items">Experience</RouterLink>
 		<a href="https://github.com/NotNatural21" class="nav_items nav_github" style="margin-left: auto;" v-if="screenWidth > 450">
-			<img src="./assets/github-mark.svg" alt="">
+			<img src="./assets/GitHub.svg" alt="">
 		</a>
 		<a href="https://www.linkedin.com/in/annette-scott-61a31a236/" class="nav_items nav_linkedin" v-if="screenWidth > 450">
-			<img src="./assets/LI-In-Bug.png" alt="">
+			<img src="./assets/LinkedIn.svg" alt="">
 		</a>
 	</nav>
 	<RouterView />
