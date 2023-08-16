@@ -14,7 +14,7 @@ export default defineComponent({
 		},
 		image: {
 			type: String,
-			required: true
+			default: ''
 		},
 		link: {
 			type: String,
@@ -35,13 +35,14 @@ export default defineComponent({
 <template>
 	<div class="project_card" :href="link">
 		<div class="top_section">
-			<a href="" v-if="github != ''"></a>
+			<img :src="'src/assets/projects/' + image" :alt="image" v-if="image != ''">
+			<img src="" alt="" v-if="image == ''">
 			<h1>{{ name }}</h1>
 			<a :href="github" v-if="github != ''">
-				<img src="src/assets/GitHub.svg" alt="GitHub Logo">
+				<img src="src/assets/logos/GitHub.svg" alt="GitHub Logo">
 			</a>
+			<a href="" v-if="github == ''"></a>
 		</div>
-		<img :src="'src/assets/project' + image" alt="">
 		<p> {{ description }}</p>
 		<a :href="link" v-if="link != ''" class="site_button">Go to site</a>
 	</div>
@@ -80,6 +81,10 @@ a {
 
 .top_section > a {
 	width: 30px;
+}
+
+.top_section > img{
+	width: 35px;
 }
 
 .site_button {

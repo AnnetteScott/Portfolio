@@ -13,7 +13,7 @@ export default defineComponent({
 
 <template>
 	<main>
-		<ProjectCard name="DashBooks" image="" description="Hello" link="https://dashbooks.app" github="https:"/>
+		<ProjectCard name="DashBooks" image="DashBooks.svg" description="Hello" link="https://dashbooks.app" github="https:"/>
 	</main>
 </template>
 

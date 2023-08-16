@@ -8,7 +8,7 @@ export default defineComponent({
 			type: String,
 			required: true
 		},
-		imgName: {
+		logo: {
 			type: String,
 			required: true
 		}
@@ -22,7 +22,7 @@ export default defineComponent({
 
 <template>
 	<div class="skill_block">
-		<img :src="'src/assets/' + imgName" :alt="title + ' logo'">
+		<img :src="'src/assets/logos/' + logo" :alt="title + ' logo'">
 		<p>{{ title }}</p>
 	</div>
 </template>

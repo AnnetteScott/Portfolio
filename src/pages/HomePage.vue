@@ -19,18 +19,18 @@ export default defineComponent({
 		</section>
 		<section id="skills">
 			<div>
-				<SkillBlock title="Unreal" imgName="Unreal.svg"/>
-				<SkillBlock title="C++" imgName="C++.svg"/>
-				<SkillBlock title="C#" imgName="CSharp.svg"/>
-				<SkillBlock title="Firebase" imgName="Firebase.svg"/>
-				<SkillBlock title="Java" imgName="Java.svg"/>
-				<SkillBlock title="GitHub" imgName="GitHub.svg"/>
-				<SkillBlock title="SQL" imgName="MySQL.svg"/>
-				<SkillBlock title="Python" imgName="Python.svg"/>
-				<SkillBlock title="TypeScript" imgName="TypeScript.svg"/>
-				<SkillBlock title="Vue" imgName="Vue.svg"/>
-				<SkillBlock title="HTML" imgName="HTML.svg"/>
-				<SkillBlock title="CSS" imgName="CSS.svg"/>
+				<SkillBlock title="Unreal" logo="Unreal.svg"/>
+				<SkillBlock title="C++" logo="C++.svg"/>
+				<SkillBlock title="C#" logo="CSharp.svg"/>
+				<SkillBlock title="Firebase" logo="Firebase.svg"/>
+				<SkillBlock title="Java" logo="Java.svg"/>
+				<SkillBlock title="GitHub" logo="GitHub.svg"/>
+				<SkillBlock title="SQL" logo="MySQL.svg"/>
+				<SkillBlock title="Python" logo="Python.svg"/>
+				<SkillBlock title="TypeScript" logo="TypeScript.svg"/>
+				<SkillBlock title="Vue" logo="Vue.svg"/>
+				<SkillBlock title="HTML" logo="HTML.svg"/>
+				<SkillBlock title="CSS" logo="CSS.svg"/>
 			</div>
 		</section>
 	</main>
