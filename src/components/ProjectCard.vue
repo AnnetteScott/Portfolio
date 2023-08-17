@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, type PropType } from 'vue';
 
 export default defineComponent({
 	name: 'ProjectCard',
@@ -24,6 +24,10 @@ export default defineComponent({
 			type: String,
 			default: ''
 		},
+		tools: {
+			type: Array as PropType<Array<string>>,
+			default: []
+		},
 	},
 	methods: {
 
@@ -33,19 +37,22 @@ export default defineComponent({
 </script>
 
 <template>
-	<div class="project_card" :href="link">
+	<component :is="link ? 'a' : 'div'" class="project_card" :href="link">
 		<div class="top_section">
 			<img :src="'src/assets/projects/' + image" :alt="image" v-if="image != ''">
 			<img src="" alt="" v-if="image == ''">
-			<h1>{{ name }}</h1>
+			<h2>{{ name }}</h2>
 			<a :href="github" v-if="github != ''">
 				<img src="src/assets/logos/GitHub.svg" alt="GitHub Logo">
 			</a>
 			<a href="" v-if="github == ''"></a>
 		</div>
 		<p> {{ description }}</p>
-		<a :href="link" v-if="link != ''" class="site_button">Go to site</a>
-	</div>
+		<div class="tools">
+			<img v-for="img of tools" :src="'src/assets/logos/' + img + '.svg'" 
+				:alt="img" class="tool_image" :title="img">
+		</div>
+	</component>
 </template>
 
 <style scoped>
@@ -53,14 +60,14 @@ export default defineComponent({
 	border: 1px solid black;
 	border-radius: 10px;
 	width: 300px;
-	padding: 0px 5px 10px;
+	height: 200px;
+	padding: 5px 10px 10px;
 	gap: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-decoration: none;
 	color: black;
-	cursor: default;
 	user-select: none;
 }
 
@@ -68,6 +75,10 @@ a {
 	cursor: pointer;
 	text-decoration: none;
 	color: black;
+}
+
+h2 {
+	white-space: nowrap;
 }
 
 .top_section {
@@ -95,5 +106,23 @@ a {
 
 .site_button:hover {
 	background-color: #00000012;
+}
+
+p {
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.tools{
+	width: 100%;
+	margin-top: auto;
+	display: flex;
+	align-items: center;
+    flex-direction: row;
+	gap: 10px;
+}
+
+.tool_image{
+	width: 30px;
 }
 </style>

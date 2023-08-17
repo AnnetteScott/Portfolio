@@ -16,6 +16,14 @@ export default defineComponent({
 		<section id="intro">
 			<h1>Annette Scott</h1>
 			<h2>Software Engineer</h2>
+			<footer>
+				<a href="https://github.com/NotNatural21">
+					<img src="../assets/logos/GitHub.svg" alt="">
+				</a>
+				<a href="https://www.linkedin.com/in/annette-scott-61a31a236/">
+					<img src="../assets/logos/LinkedIn.svg" alt="">
+				</a>
+			</footer>
 		</section>
 		<section id="skills">
 			<div>
