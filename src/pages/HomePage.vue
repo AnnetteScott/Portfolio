@@ -3,10 +3,10 @@ import SkillBlock from '@/components/SkillBlock.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-    name: 'HomePage',
-    props: {},
-    methods: {},
-    components: { SkillBlock }
+	name: 'HomePage',
+	props: {},
+	methods: {},
+	components: { SkillBlock }
 })
 
 </script>
@@ -14,16 +14,22 @@ export default defineComponent({
 <template>
 	<main>
 		<section id="intro">
-			<h1>Annette Scott</h1>
-			<h2>Software Engineer</h2>
-			<footer>
+			<div></div>
+			<div>
+				<h1>Annette Scott</h1>
+				<h2>Software Engineer</h2>
+			</div>
+			<div id="footer">
 				<a href="https://github.com/NotNatural21">
-					<img src="../assets/logos/GitHub.svg" alt="">
+					<img src="../assets/logos/GitHub.svg" alt="GitHub Logo">
 				</a>
 				<a href="https://www.linkedin.com/in/annette-scott-61a31a236/">
-					<img src="../assets/logos/LinkedIn.svg" alt="">
+					<img src="../assets/logos/LinkedIn.svg" alt="LinkedIn Logo">
 				</a>
-			</footer>
+				<a href="mailto:me@annette.page">
+					<img src="../assets/Mail.svg" alt="LinkedIn Logo">
+				</a>
+			</div>
 		</section>
 		<section id="skills">
 			<div>
@@ -50,15 +56,25 @@ section {
 }
 #intro{
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#intro > #footer {
+	width: 100%;
+	display: flex;
+	gap: 20px;
+}
+
+#intro > #footer img {
+	width: 40px;
 }
 
 #skills {
 	display: flex;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 }
 
 #skills > div {

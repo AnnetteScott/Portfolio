@@ -29,9 +29,17 @@ export default defineComponent({
 			default: []
 		},
 	},
-	methods: {
-
+	computed: {
+		imageLogo(){
+			return new URL('src/assets/projects/' + this.image, import.meta.url).href;
+		},
+		
 	},
+	methods: {
+		imageTool(img: string){
+			return new URL('src/assets/logos/' + img + '.svg', import.meta.url).href;
+		}
+	}
 })
 
 </script>
@@ -39,17 +47,17 @@ export default defineComponent({
 <template>
 	<component :is="link ? 'a' : 'div'" class="project_card" :href="link">
 		<div class="top_section">
-			<img :src="'src/assets/projects/' + image" :alt="image" v-if="image != ''">
+			<img :src="imageLogo" :alt="image" v-if="image != ''">
 			<img src="" alt="" v-if="image == ''">
 			<h2>{{ name }}</h2>
 			<a :href="github" v-if="github != ''">
-				<img src="src/assets/logos/GitHub.svg" alt="GitHub Logo">
+				<img src="../assets/logos/GitHub.svg" alt="GitHub Logo">
 			</a>
 			<a href="" v-if="github == ''"></a>
 		</div>
 		<p> {{ description }}</p>
 		<div class="tools">
-			<img v-for="img of tools" :src="'src/assets/logos/' + img + '.svg'" 
+			<img v-for="img of tools" :src="imageTool(img)" 
 				:alt="img" class="tool_image" :title="img">
 		</div>
 	</component>

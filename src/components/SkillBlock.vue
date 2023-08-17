@@ -13,8 +13,10 @@ export default defineComponent({
 			required: true
 		}
 	},
-	methods: {
-
+	computed: {
+		image(){
+			return new URL('src/assets/logos/' + this.logo, import.meta.url).href;
+		}
 	},
 })
 
@@ -22,7 +24,7 @@ export default defineComponent({
 
 <template>
 	<div class="skill_block">
-		<img :src="'src/assets/logos/' + logo" :alt="title + ' logo'">
+		<img :src="image" :alt="title + ' logo'">
 		<p>{{ title }}</p>
 	</div>
 </template>
