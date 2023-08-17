@@ -1,88 +1,30 @@
 <script lang="ts">
-import SkillBlock from '@/components/SkillBlock.vue';
+import IntroSection from '@/pages/IntroSection.vue';
+import SkillSection from '@/pages/SkillSection.vue';
+import ProjectSection from '@/pages/ProjectSection.vue';
 import { defineComponent } from 'vue';
 
 export default defineComponent({
 	name: 'HomePage',
-	props: {},
-	methods: {},
-	components: { SkillBlock }
+	components: { IntroSection, SkillSection, ProjectSection }
 })
 
 </script>
 
 <template>
 	<main>
-		<section id="intro">
-			<div></div>
-			<div>
-				<h1>Annette Scott</h1>
-				<h2>Software Engineer</h2>
-			</div>
-			<div id="footer">
-				<a href="https://github.com/NotNatural21">
-					<img src="../assets/logos/GitHub.svg" alt="GitHub Logo">
-				</a>
-				<a href="https://www.linkedin.com/in/annette-scott-61a31a236/">
-					<img src="../assets/logos/LinkedIn.svg" alt="LinkedIn Logo">
-				</a>
-				<a href="mailto:me@annette.page">
-					<img src="../assets/Mail.svg" alt="LinkedIn Logo">
-				</a>
-			</div>
-		</section>
-		<section id="skills">
-			<div>
-				<SkillBlock title="Unreal" logo="Unreal.svg"/>
-				<SkillBlock title="C++" logo="C++.svg"/>
-				<SkillBlock title="C#" logo="CSharp.svg"/>
-				<SkillBlock title="Firebase" logo="Firebase.svg"/>
-				<SkillBlock title="Java" logo="Java.svg"/>
-				<SkillBlock title="GitHub" logo="GitHub.svg"/>
-				<SkillBlock title="SQL" logo="MySQL.svg"/>
-				<SkillBlock title="Python" logo="Python.svg"/>
-				<SkillBlock title="TypeScript" logo="TypeScript.svg"/>
-				<SkillBlock title="Vue" logo="Vue.svg"/>
-				<SkillBlock title="HTML" logo="HTML.svg"/>
-				<SkillBlock title="CSS" logo="CSS.svg"/>
-			</div>
-		</section>
+		<IntroSection />
+		<ProjectSection />
+		<SkillSection />
 	</main>
 </template>
 
-<style scoped>
+<style>
 section {
-	height: 100%;
-}
-#intro{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+	min-height: 60%;
 }
 
-#intro > #footer {
-	width: 100%;
-	display: flex;
-	gap: 20px;
-}
-
-#intro > #footer img {
-	width: 40px;
-}
-
-#skills {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#skills > div {
-	min-width: 300px;
-	max-width: calc(4 * 170px);
-	display: flex;
-	flex-flow: row wrap;    
-	justify-content: center;
-	gap: 25px;
+h1 {
+	font-size: 3rem;
 }
 </style>

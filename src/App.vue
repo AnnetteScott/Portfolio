@@ -5,17 +5,19 @@ let screenWidth = ref(window.innerWidth);
 window.addEventListener('resize', function(event) {
     screenWidth.value = window.innerWidth;
 }, true);
+let minWidth = 570;
 </script>
 
 <template>
 	<nav>
 		<RouterLink to="/" class="nav_items">Home</RouterLink>
 		<RouterLink to="/projects" class="nav_items">Projects</RouterLink>
+		<RouterLink to="/projects" class="nav_items" v-if="screenWidth > minWidth">Skills</RouterLink>
 		<RouterLink to="/experience" class="nav_items">Experience</RouterLink>
-		<a href="https://github.com/NotNatural21" class="nav_items nav_github" style="margin-left: auto;" v-if="screenWidth > 450">
+		<a href="https://github.com/NotNatural21" class="nav_items nav_github" style="margin-left: auto;" v-if="screenWidth > minWidth">
 			<img src="./assets/logos/GitHub.svg" alt="">
 		</a>
-		<a href="https://www.linkedin.com/in/annette-scott-61a31a236/" class="nav_items nav_linkedin" v-if="screenWidth > 450">
+		<a href="https://www.linkedin.com/in/annette-scott-61a31a236/" class="nav_items nav_linkedin" v-if="screenWidth > minWidth">
 			<img src="./assets/logos/LinkedIn.svg" alt="">
 		</a>
 	</nav>
@@ -24,7 +26,6 @@ window.addEventListener('resize', function(event) {
 
 <style>
 @import url("./assets/main.css");
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Manrope:wght@500&display=swap');
 nav{
 	width: 100%;
 	height: 50px;
@@ -47,8 +48,6 @@ nav{
 	font-size: 15px;
 	padding: 0px 10px;
 	border-radius: 20px;
-	font-family: 'Caprasimo', cursive;
-	font-family: 'Manrope', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {

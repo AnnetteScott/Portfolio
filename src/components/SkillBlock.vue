@@ -15,7 +15,7 @@ export default defineComponent({
 	},
 	computed: {
 		image(){
-    		return new URL(`../assets/logos/${this.logo}`, import.meta.url).href;
+			return new URL(`../assets/logos/${this.logo}`, import.meta.url).href;
 		}
 	},
 })
@@ -31,33 +31,35 @@ export default defineComponent({
 
 <style scoped>
 .skill_block{
-	width: 55px;
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+	width: 180px;
+	height: 65px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	border: 1px solid black;
+	border-radius: 10px;
 }
 
 p{
+	margin-left: 7px;
 	font-size: 15px;
 	white-space: nowrap;
 }
 
 img{
-	border: 2px solid #000;
-    border-radius: 14px;
-    display: inline-block;
-    padding: 7px;
-    height: 65px;
-    width: 65px;
+	border-radius: 14px;
+	display: inline-block;
+	padding: 7px;
+	height: 65px;
+	width: 65px;
 }
 
 
 @media only screen and (min-width: 768px) {
 	.skill_block {
-		width: 150px;
-		height: 170px;
+		width: 250px;
+		height: 120px;
 	}
 
 	img {
@@ -68,7 +70,7 @@ img{
 
 	p{
 		margin: 0;
-		font-size: 1.5rem;
+		font-size: 18px;
 		white-space: nowrap;
 	}
 }
