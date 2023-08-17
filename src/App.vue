@@ -1,19 +1,22 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
+import HomePage from '@/pages/HomePage.vue'
+
 let screenWidth = ref(window.innerWidth);
 window.addEventListener('resize', function(event) {
     screenWidth.value = window.innerWidth;
 }, true);
-let minWidth = 570;
+let minWidth = 660;
 </script>
 
 <template>
 	<nav>
-		<RouterLink to="/" class="nav_items">Home</RouterLink>
-		<RouterLink to="/projects" class="nav_items">Projects</RouterLink>
-		<RouterLink to="/projects" class="nav_items" v-if="screenWidth > minWidth">Skills</RouterLink>
-		<RouterLink to="/experience" class="nav_items">Experience</RouterLink>
+		<a href="/" class="nav_items">Home</a>
+		<a href="#projects" class="nav_items">Projects</a>
+		<a href="#skills" class="nav_items" v-if="screenWidth > minWidth">Skills</a>
+		<a href="#skills" class="nav_items" v-if="screenWidth > minWidth">Experience</a>
+		<a href="#skills" class="nav_items">Contact</a>
+
 		<a href="https://github.com/NotNatural21" class="nav_items nav_github" style="margin-left: auto;" v-if="screenWidth > minWidth">
 			<img src="./assets/logos/GitHub.svg" alt="">
 		</a>
@@ -21,7 +24,7 @@ let minWidth = 570;
 			<img src="./assets/logos/LinkedIn.svg" alt="">
 		</a>
 	</nav>
-	<RouterView />
+	<HomePage />
 </template>
 
 <style>

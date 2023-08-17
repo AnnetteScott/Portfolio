@@ -22,6 +22,7 @@ export default defineComponent({
 <style>
 section {
 	min-height: 60%;
+	padding-bottom: 50px;
 }
 
 h1 {
