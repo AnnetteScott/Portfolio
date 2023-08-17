@@ -31,13 +31,13 @@ export default defineComponent({
 	},
 	computed: {
 		imageLogo(){
-			return new URL('src/assets/projects/' + this.image, import.meta.url).href;
+			return new URL(`../assets/projects/${this.image}`, import.meta.url).href;
 		},
 		
 	},
 	methods: {
 		imageTool(img: string){
-			return new URL('src/assets/logos/' + img + '.svg', import.meta.url).href;
+			return new URL(`../assets/logos/${img}.svg`, import.meta.url).href;
 		}
 	}
 })
