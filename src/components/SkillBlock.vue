@@ -31,8 +31,8 @@ export default defineComponent({
 
 <style scoped>
 .skill_block{
-	width: 180px;
-	height: 65px;
+	width: 145px;
+	height: 60px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -42,7 +42,7 @@ export default defineComponent({
 }
 
 p{
-	margin-left: 7px;
+	margin-left: 5px;
 	font-size: 15px;
 	white-space: nowrap;
 }
@@ -51,8 +51,8 @@ img{
 	border-radius: 14px;
 	display: inline-block;
 	padding: 7px;
-	height: 65px;
-	width: 65px;
+	height: 60px;
+	width: 60px;
 }
 
 

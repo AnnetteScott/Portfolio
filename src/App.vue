@@ -15,12 +15,12 @@ let minWidth = 660;
 		<a href="#projects" class="nav_items">Projects</a>
 		<a href="#skills" class="nav_items" v-if="screenWidth > minWidth">Skills</a>
 		<a href="#skills" class="nav_items" v-if="screenWidth > minWidth">Experience</a>
-		<a href="#skills" class="nav_items">Contact</a>
+		<a href="#contact" class="nav_items">Contact</a>
 
-		<a href="https://github.com/NotNatural21" class="nav_items nav_github" style="margin-left: auto;" v-if="screenWidth > minWidth">
+		<a href="https://github.com/AnnetteScott" class="nav_items nav_github" style="margin-left: auto;" v-if="screenWidth > minWidth">
 			<img src="./assets/logos/GitHub.svg" alt="">
 		</a>
-		<a href="https://www.linkedin.com/in/annette-scott-61a31a236/" class="nav_items nav_linkedin" v-if="screenWidth > minWidth">
+		<a href="https://www.linkedin.com/in/annettescott" class="nav_items nav_linkedin" v-if="screenWidth > minWidth">
 			<img src="./assets/logos/LinkedIn.svg" alt="">
 		</a>
 	</nav>
