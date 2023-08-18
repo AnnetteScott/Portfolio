@@ -60,7 +60,7 @@ export default defineComponent({
 }
 
 #project_inner {
-	width: 100%;
+	width: max(90%, 320px);
     height: 100%;
 	gap: 50px;
     display: flex;

@@ -43,7 +43,7 @@ export default defineComponent({
 }
 
 #skills > div {
-	width: 100%;
+	width: max(90%, 320px);
 	height: 100%;
 	display: flex;
 	flex-flow: row wrap;
