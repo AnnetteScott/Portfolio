@@ -64,6 +64,10 @@ export default defineComponent({
 </template>
 
 <style scoped>
+h2 {
+	font-size: 1.5rem;
+}
+
 .project_card{
 	border: 1px solid black;
 	border-radius: 10px;

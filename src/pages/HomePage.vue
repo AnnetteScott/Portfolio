@@ -37,6 +37,10 @@ h1 {
 	font-size: 3rem;
 }
 
+h2 {
+	font-size: 2.5rem;
+}
+
 a{
 	text-decoration: none;
 	color: black;
