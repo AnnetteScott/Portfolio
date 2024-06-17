@@ -14,7 +14,6 @@ let minWidth = 660;
 		<a href="/" class="nav_items">Home</a>
 		<a href="#projects" class="nav_items">Projects</a>
 		<a href="#skills" class="nav_items" v-if="screenWidth > minWidth">Skills</a>
-		<a href="#skills" class="nav_items" v-if="screenWidth > minWidth">Experience</a>
 		<a href="#contact" class="nav_items">Contact</a>
 
 		<a href="https://github.com/AnnetteScott" class="nav_items nav_github" style="margin-left: auto;" v-if="screenWidth > minWidth">

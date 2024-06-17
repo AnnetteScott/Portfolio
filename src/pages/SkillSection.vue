@@ -16,6 +16,7 @@ export default defineComponent({
 	<section id="skills">
 		<h2>Skills</h2>
 		<div>
+			<SkillBlock title="Unity" logo="Unity.svg"/>
 			<SkillBlock title="Unreal" logo="Unreal.svg"/>
 			<SkillBlock title="C++" logo="C++.svg"/>
 			<SkillBlock title="C#" logo="CSharp.svg"/>

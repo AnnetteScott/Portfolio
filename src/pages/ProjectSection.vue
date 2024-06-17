@@ -16,34 +16,35 @@ export default defineComponent({
 	<section id="projects">
 			<h2>Projects</h2>
 			<div id="project_inner">
-				<ProjectCard name="Warehouse Wreckage" 
-					description="Simple game in Unreal Engine using Blueprints where you fire projectiles at destructible items"
-					:tools="['Unreal']"
+				<ProjectCard name="Spirecrest" 
+					description="A 3D FPS, Dungeon crawler where you play as a wizard trying to escape a tower."
+					:tools="['Unreal', 'C++']"
 				/>
-				<ProjectCard name="Battleship" 
-					description="Java CUI Battleship game for a university course"
-					:tools="['Java']"
+				<ProjectCard name="Mage Tower" 
+					description="A 2D pixel art puzzle platformer where you play as a wizard trying to escape a tower." 
+					link="https://github.com/AnnetteScott/Mage-Tower"
+					:tools="['Unity', 'CSharp']"
 				/>
-				<ProjectCard name="DashBooks" image="DashBooks.svg" 
-					description="Bookkeeping app" 
-					link="https://dashbooks.app"
-					:tools="['Firebase', 'Vue', 'TypeScript', 'Stripe']"
-				/>
-				<ProjectCard name="HexaChess" 
+				<ProjectCard name="Super Tic Tac Toe" 
+					description="An expansion on the classic Tic Tac Toe game with a grid of 9 smaller boards." 
+					link="https://github.com/AnnetteScott/super-tic-tac-toe"
+					:tools="['Vue', 'TypeScript']"
+					/>
+					<ProjectCard name="Product Scanner" 
+					description="An embedded script that runs on a Raspberry Pi Pico for scanning grocery items." 
+					link="https://github.com/AnnetteScott/super-tic-tac-toe"
+					:tools="['C++']"
+					/>
+					<ProjectCard name="HexaChess" 
 					description="Hexagonal Chess in the web browser" 
 					link="https://hexachess.notnatural.dev/" 
 					github="https://github.com/NotNatural21/HexaChess"
 					:tools="['Vue', 'TypeScript']"
-				/>
-				<ProjectCard name="Grader" 
-					description="Simple web app to help manage and view what your current grade is" 
-					github="https://github.com/NotNatural21/Grader"
-					:tools="['Firebase', 'Vue', 'TypeScript']"
-				/>
-				<ProjectCard name="Boxes" 
-					description="Remake of the paper game 'Dots and boxes' in Ionic and Vue" 
-					github="https://github.com/NotNatural21/Boxes"
-					:tools="['Vue', 'TypeScript', 'Ionic']"
+					/>
+					<ProjectCard name="Battleship" 
+					description="Java GUI Battleship game for a university course"
+					link="https://github.com/AnnetteScott/Battleships"
+					:tools="['Java']"
 				/>
 			</div>
 		</section>
